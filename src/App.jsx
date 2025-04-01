@@ -12,12 +12,12 @@ function App() {
     <div>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route element={<ProtectedRoute />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-          </Route>
+          {/* <Route element={<ProtectedRoute />}> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Route>
+        {/* </Route> */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registerss />} />
       </Routes>
